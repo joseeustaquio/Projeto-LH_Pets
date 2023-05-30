@@ -7,7 +7,11 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
         var app = builder.Build();
 
-        app.MapGet("/", () => "Hello World!");
+        app.MapGet("/", () => "Projeto Web -LH -pets");
+        app.UseStaticFiles();
+        app.MapGet("/index", (HttpContext contexto)=>{
+            contexto.Response.Redirect("index.html",false);
+        });
 
         app.Run();
     }
