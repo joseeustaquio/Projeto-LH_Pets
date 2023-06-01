@@ -4,7 +4,12 @@ namespace Projeto_Web_Lh_Pets_versão_1
 {
     class Banco
     {   
-	
+	  private List<Clientes> lista = new List<Clientes>();
+
+      public List<Clientes> GetLista()
+      {
+        return lista;
+      }
     
 	public Banco()
 	{
