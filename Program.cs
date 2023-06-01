@@ -13,6 +13,11 @@ public class Program
             contexto.Response.Redirect("index.html",false);
         });
 
+        Banco dba = new Banco();
+        app.MapGet("/listaClientes", (HttpContext contexto)=>{
+            contexto.Response.WriteAsync(dba.GetListaString();)
+        });
+
         app.Run();
     }
 }
