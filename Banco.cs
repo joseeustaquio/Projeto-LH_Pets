@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace Projeto_Web_Lh_Pets_versão_1
+namespace Projeto_Web_Lh_Pets
 {
     class Banco
     {   
